@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İkra 💞</title>
+
+<style>
+
+body{
+margin:0;
+padding:0;
+background:#111;
+overflow:hidden;
+font-family:Arial;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+text-align:center;
+}
+
+.bg{
+position:absolute;
+width:100%;
+height:100%;
+background:linear-gradient(180deg,#111,#222,#ff0055);
+animation:bg 8s infinite alternate;
+z-index:-3;
+}
+
+@keyframes bg{
+0%{filter:hue-rotate(0deg);}
+100%{filter:hue-rotate(25deg);}
+}
+
+.card{
+width:90%;
+max-width:420px;
+padding:25px;
+border-radius:30px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+box-shadow:0 0 25px rgba(255,255,255,0.2);
+}
+
+button{
+padding:14px 22px;
+border:none;
+border-radius:25px;
+font-size:17px;
+font-weight:bold;
+background:white;
+color:#ff0055;
+margin-top:20px;
+}
+
+img{
+width:230px;
+border-radius:22px;
+margin-top:15px;
+}
+
+.float{
+position:absolute;
+font-size:20px;
+opacity:0.12;
+animation:float 10s linear infinite;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+}
+100%{
+transform:translateY(-120vh);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="float" style="left:10%">ikos 💞</div>
+<div class="float" style="left:30%;animation-delay:2s;">alim seni seviyorum 💖</div>
+<div class="float" style="left:50%;animation-delay:4s;">iyi ki doğdun 💞</div>
+<div class="float" style="left:75%;animation-delay:1s;">💛💙</div>
+
+<div class="card">
+
+<div id="content">
+
+<h1>💌 Gizli Dosya</h1>
+
+<p style="line-height:32px;font-size:19px;">
+
+İkra için hazırlanmış özel doğum günü dosyası 💞
+
+</p>
+
+<button onclick="scene1()">
+
+Başlat 💖
+
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+function scene1(){
+
+document.getElementById("content").innerHTML = `
+
+<h2>💖 Mini Test</h2>
+
+<p style="line-height:32px;font-size:19px;">
+
+Ali'nin en sevdiği şey hangisi? 😭
+
+</p>
+
+<button onclick="scene2()">
+
+İkra'nın trip atması 💞
+
+</button>
+
+<br>
+
+<button onclick="wrong()">
+
+Senin çok konuşman
+
+</button>
+
+`;
+
+}
+
+function wrong(){
+
+alert("Yanlış cevap 😭");
+
+}
+
+function scene2(){
+
+document.getElementById("content").innerHTML = `
+
+<h2>🚗 Hot Wheels Kızı</h2>
+
+<p style="line-height:34px;font-size:19px;">
+
+Hot Wheels konuşmalarımız,<br>
+random mesajların,<br>
+saçma kahkahaların 😭<br><br>
+
+İstemeden günümün en güzel kısmı oldu 💖
+
+</p>
+
+<button onclick="scene3()">
+
+Devam 💌
+
+</button>
+
+`;
+
+}
+
+function scene3(){
+
+document.getElementById("content").innerHTML = `
+
+<h2>💞 Jack & Kate</h2>
+
+<img src="jackkate.jpg">
+
+<p style="line-height:34px;font-size:18px;">
+
+Bak onlar bile sizi onaylıyor 😭💖
+
+</p>
+
+<button onclick="scene4()">
+
+Devam 💕
+
+</button>
+
+`;
+
+}
+
+function scene4(){
+
+document.getElementById("content").innerHTML = `
+
+<h2>💌 Küçük Bir İtiraf</h2>
+
+<img src="jack.jpg">
+
+<p style="line-height:34px;font-size:18px;">
+
+Belki bazen fazla kıskanıyorum 😭<br><br>
+
+Çünkü seni diğer insanlardan biraz daha farklı görüyorum 💞
+
+</p>
+
+<button onclick="scene5()">
+
+Devam 💖
+
+</button>
+
+`;
+
+}
+
+function scene5(){
+
+document.getElementById("content").innerHTML = `
+
+<h2>💛💙 Bir Şey Daha</h2>
+
+<p style="line-height:36px;font-size:19px;">
+
+Fenerbahçeli olmanla 💛💙<br>
+yeşil gözlerinle,<br>
+random oluşunla bile güzelsin 😭💖<br><br>
+
+Seninle kurduğum hayalleri kimseyle değişmem.
+
+</p>
+
+<button onclick="finalScene()">
+
+Son Mesaj 💌
+
+</button>
+
+`;
+
+}
+
+function finalScene(){
+
+document.getElementById("content").innerHTML = `
+
+<h1 style="color:#ff4d88;">
+
+Seni Seviyorum 💞
+
+</h1>
+
+<h2>
+
+İyi ki doğdun İkra 💖
+
+</h2>
+
+<p style="line-height:36px;font-size:20px;">
+
+Bazı insanlar normal biri gibi girer hayatına...<br><br>
+
+Sonra fark etmeden gününün en güzel kısmı olurlar 💞
+
+</p>
+
+<h2>
+
+— Ali
+
+</h2>
+
+`;
+
+}
+
+</script>
+
+</body>
+</html>
